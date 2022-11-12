@@ -1,4 +1,5 @@
 @import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Quicksand:wght@300;500&family=Seymour+One&display=swap');
 
 body{
     font-family: 'Titillium Web', sans-serif;
@@ -8,6 +9,10 @@ body{
     max-width: 1140px;
     width: calc(100% - 40px);
     margin: 0 auto;
+}
+
+h1{
+    font-family: 'Major Mono Display', monospace;
 }
 
 .top_line{
