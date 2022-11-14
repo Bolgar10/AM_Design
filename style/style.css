@@ -1,15 +1,26 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Quicksand:wght@300;500&family=Seymour+One&display=swap');
 
+:root {
+    --black: #423f3b;
+    --white: white;
+
+    /* https://color-wheel-artist.com/thrive/wp-content/uploads/2017/03/plant-GOV.jpg */
+    --main-color: #ab131b;
+    --main-color-darker: #3F0e0e;
+    --main-color-even-darker: #2c0505;
+    --main-color-brighter: #cb939b;
+
+    --accent-color: #fc8708;
+    --accent-color-darker: #cc5708;
+    --accent-color-brighter: #fca768;
+}
+
 body{
     font-family: 'Titillium Web', sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
-}
-
-*{
-    box-sizing: border-box;
 }
 
 .wrapper{
@@ -23,7 +34,7 @@ body{
     font-size: 40pt;
     text-align: left;
     font-weight: bold;
-    color: white;
+    color: var(--white);
 }
 
 h2 {
@@ -40,13 +51,14 @@ h2 {
 }
 
 header{
-    background: #87509c;
+    background: var(--main-color-darker);
+    z-index: 2;
 }
 
 .header_nav{
     font-size: 16px;
     line-height: 18px;
-    color: #ffffff;
+    color: var(--white);
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -110,7 +122,7 @@ p.title_2{
     letter-spacing: 0.02em;
     border-radius: 3px;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white);
     font-weight: 600;
     border-bottom: 4px solid #c86a40;
     transition: background 300ms ease-in-out;
@@ -123,7 +135,7 @@ p.title_2{
 section.services{
     padding: 120px 0;
     text-align: center;
-    background: #17c2a4;
+    background: var(--dark-red);
 
 }
 
@@ -349,5 +361,23 @@ footer.footer a:hover{
 
 
 #main {
-    background: #BB6;
+    background: linear-gradient(
+        8deg,
+        var(--main-color-brighter)  1%,
+        var(--main-color)          20%,
+        var(--main-color-darker)   60%,
+        var(--main-color-even-darker)
+    );
+    box-shadow: 0 5px 10px 7px black;
+    z-index: 1;
 }
+.card {
+    background: linear-gradient(
+        130deg,
+        var(--accent-color-brighter),
+        var(--accent-color),
+        var(--accent-color-darker)
+    );
+    color: var(--black);
+}
+.card img { filter: invert(10%); }
