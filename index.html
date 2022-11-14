@@ -3,15 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AM Design</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/card.css">
+
+    <script src="https://kit.fontawesome.com/ef592c4961.js" crossorigin="anonymous"></script>
   </head>
+
   <body>
     <header>
       <div class="wrapper">
         <div class="top_line">
-          <h1>AM DESIGN</h1>
+          <h1 id="logo">
+            AM<br/>DESIGN
+          </h1>
+          
           <nav class="header_nav">
             <ul>
               <li class="active"><a href="#">За нас</a></li>
@@ -21,19 +30,51 @@
               <li><a href="#">Нашите проекти</a></li>
             </ul>
           </nav>
+          
         </div>
       </div>
-      <div class="bottom_line">
-        <p class="title_1">От Визия до Реалност</p>
-        <p class="title_2">Ние превръщаме вашите идеи и дизайни в реални приложения и уебсайтове.</p>
-        <a href="http://google.com" class="button">WORK WITH US!</a>
-      </div>
     </header>
+
+    <section id="main">
+      <div class="three-cards">
+        <div class="card">
+          <h2>Идея</h2>
+          <img src="thought-bubble.png" width="70%">
+          <p>
+            Комуникираме с вас, за да открием най-добрият начин да
+            постигнем, това, което желаете.
+          </p>
+        </div>
+
+        <Div class="card">
+          <h2>Стратегия</h2>
+          <img src="strategy-card.png" width="60%">
+          <p>
+            Избираме най-добрия и бърз начин да стигнем от
+            идеята ви до краен продукт.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Продукт</h2>
+          <img src="product-box.png" width="60%">
+          <p>
+            Изготвяме финалният продук и го донасяме в срок и с
+            гаранция за качество.
+          </p>
+        </div>
+        
+      </div>
+    </section>
 
     <section class="services">
         <div class="wrapeer">
             <h2>SERVICES WE PROVIDE</h2>
-            <p class="description">We are working with both individuals and businesses from all over the globe <br/>to create awesome websites and applications.</p>
+            <p class="description">
+              We are working with both individuals and businesses from
+              all over the globe <br/>to create awesome websites and
+              applications.
+            </p>
             <div class="services_list">
                 <div class="service_item">
                     <div class="img"><img src="images/icon1.png" alt="Icon"></div>

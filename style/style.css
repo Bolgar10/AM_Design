@@ -3,6 +3,13 @@
 
 body{
     font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 .wrapper{
@@ -11,8 +18,18 @@ body{
     margin: 0 auto;
 }
 
-h1{
+#logo {
     font-family: 'Major Mono Display', monospace;
+    font-size: 40pt;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    font-size: 40pt;
+    margin: 20px 0px;
+    font-weight: bold;
 }
 
 .top_line{
@@ -328,4 +345,9 @@ footer.footer a {
 
 footer.footer a:hover{
     color: #30bae7;
+}
+
+
+#main {
+    background: #BB6;
 }

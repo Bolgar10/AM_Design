@@ -1,0 +1,109 @@
+:root {
+    --shadow-1: 2px #AAA;
+    --shadow-2: 4px #777;
+    --shadow-3: 6px #555;
+    --shadow-4: 8px #444;
+
+    --shadow-1-hover:  4px #CCC;
+    --shadow-2-hover:  8px #999;
+    --shadow-3-hover: 12px #666;
+    --shadow-4-hover: 16px 20px 1px #333;
+}
+
+.three-cards {
+    display: flex;
+    flex-direction: row;
+
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    flex: 1;
+
+    justify-content: center;
+    align-items: center;
+    
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 7px;
+    flex-basis: 100%;
+
+    transition: all 0.2s;
+}
+
+.card>* {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+.three-cards .card:first-child {
+    box-shadow:
+        -2px var(--shadow-1),
+        -4px var(--shadow-2),
+        -6px var(--shadow-3),
+        -8px var(--shadow-4);
+}
+.three-cards .card:nth-child(2) {
+    box-shadow:
+        0 var(--shadow-1),
+        0 var(--shadow-2),
+        0 var(--shadow-3),
+        0 var(--shadow-4);
+}
+.three-cards .card:last-child {
+    box-shadow:
+        2px var(--shadow-1),
+        4px var(--shadow-2),
+        6px var(--shadow-3),
+        8px var(--shadow-4);
+}
+
+
+.three-cards .card:first-child:hover {
+    transform: scale(102%, 102%) translateX(5px);
+    box-shadow:
+        -4px  var(--shadow-1-hover),
+        -8px  var(--shadow-2-hover),
+        -12px var(--shadow-3-hover),
+        -16px var(--shadow-4-hover)
+    ;
+}
+.three-cards .card:nth-child(2):hover {
+    box-shadow:
+        0 var(--shadow-1-hover),
+        0 var(--shadow-2-hover),
+        0 var(--shadow-3-hover),
+        0 var(--shadow-4-hover)
+    ;
+}
+.three-cards .card:last-child:hover {
+    transform: scale(102%, 102%) translateX(-5px);
+    box-shadow:
+        4px  var(--shadow-1-hover),
+        8px  var(--shadow-2-hover),
+        12px var(--shadow-3-hover),
+        16px var(--shadow-4-hover);
+}
+
+
+
+
+.card p {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: scale(102%, 102%);
+    transition: all 0.2s;
+}
+
